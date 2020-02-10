@@ -1,8 +1,14 @@
 from display import *
 
 def draw_line( x0, y0, x1, y1, screen, color ):
-	x = int(x0)
-	y = int(y0)
+	if (x0 > x1):
+                x = int(x1)
+                x1 = x0
+                y = int(y1)
+                y1 = y0
+        else:
+                x = int(x0)
+                y = int(y0)
 	A = y1 - y
 	B = -(x1 - x)
 	hold = 0
