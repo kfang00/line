@@ -20,7 +20,7 @@ def draw_line( x0, y0, x1, y1, screen, color ):
             			d = d + 2 * B
         		x = x + 1
         		d = d + 2 * A
-	else if (slope > 1):
+	elif (slope > 1):
 		d = A + 2 * B #octant 2
 		while y <= y1:
         		plot (screen, color, x, y)
@@ -29,7 +29,7 @@ def draw_line( x0, y0, x1, y1, screen, color ):
            	 		d = d + 2 * A
         		y = y + 1
         		d = d + 2 * B
-	else if (slope < -1):
+	elif (slope < -1):
 		d = A - 2 * B #octant 7
 		while y >= y1:
 			plot (screen, color, x, y)
