@@ -35,14 +35,12 @@ c = [ 0, 255, 0 ]
 # draw_line(XRES/2, 0, XRES/2, YRES-1, s, c);
 x = 0
 y = 0
-while x < XRES:
-    while y < YRES:
-        draw_line(250, 250, x, y * 56, s, c);
-        draw_line(x, y * 56, 250, 250, s, c);
-        c[RED] = x
-        draw_line(XRES-1, 0, x * 3, y/5, s, c);
-        y += 1
-    x += 1
+for x in range(500)
+    draw_line(250, 250, x, y * 56, s, c);
+    draw_line(x % 500, y, 250, 250, s, c);
+    c[RED] = x
+    draw_line(XRES-1, 0, x * 3, y/5, s, c);
+
 
 display(s)
 save_ppm(s, 'binary.ppm')
