@@ -35,14 +35,12 @@ c = [ 250, 0, 250 ]
 # draw_line(XRES/2, 0, XRES/2, YRES-1, s, c);
 x = 0
 while x < 200:
-    c[RED] -= 1
-    c[GREEN] += 1
-    draw_line((XRES) + 2 * x, (YRES / 3) + 4 * x, 250+x, 250+x, s, c);
-    draw_line(250-x, 250-x, (XRES / 4) + 3 * x, (YRES / 2) + x, s, c);
-    draw_line((XRES / 4) + 3 * x, (YRES / 2) + x, (XRES) + 2 * x, (YRES / 3) + 4 * x, s, c);
-    draw_line((XRES) - 2 * x, (YRES / 3) - 4 * x, 250-x, 250-x, s, c);
-    draw_line(250+x, 250+x, (XRES / 4) - 3 * x, (YRES / 2) - x, s, c);
-    draw_line((XRES / 4) - 3 * x, (YRES / 2) - x, (XRES) - 2 * x, (YRES / 3) - 4 * x, s, c);
+    c = [ 250, 0, 23 ]
+    draw_line((XRES) - 2 * x, (YRES / 3) - 4 * x, XRES/2, 0, s, c);
+    draw_line(XRES/2, 0, (XRES / 4) + 3 * x, (YRES / 2) + x, s, c);
+    c = [ 231, 174, 34 ]
+    draw_line((XRES) + 2 * x, (YRES / 3) + 4 * x, 0, YRES/2, s, c);
+    draw_line(0, YRES/2, (XRES / 4) - 3 * x, (YRES / 2) - x, s, c);
     #draw_line(250, 250, x, (YRES * 56) % 500, s, c);
     x = x + 10
 
