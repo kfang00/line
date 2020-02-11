@@ -52,7 +52,7 @@ while x < 500:
     draw_line(x+1, 0, x/2, YRES-1, s, c);
     c[BLUE] = 0;
     c[GREEN] = 255;
-    draw_line(0, YRES/2 - x, x+1, YRES/2 + x, s, c);
+    draw_line(0, YRES/2, x+1, YRES/2, s, c);
     draw_line(x/2, 0, x/2, YRES-1, s, c);
     x = x + 10
 
