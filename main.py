@@ -35,8 +35,11 @@ c = [ 0, 255, 0 ]
 # draw_line(XRES/2, 0, XRES/2, YRES-1, s, c);
 for x in range(500):
     c[RED] = x % 250
+    draw_line(250, 250, x, (XRES / 56), s, c);
+    draw_line(x, 250, x + 300, (YRES * 56) % 500, s, c);
     c[BLUE] = x % 200
-    draw_line(250, 250, x, (x * 56) % 500, s, c);
+    draw_line(250, YRES/8, x, (YRES * x) % 500, s, c);
+    draw_line(250, 250, x, (YRES * 56) % 500, s, c);
 
 
 display(s)
