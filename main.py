@@ -36,11 +36,10 @@ c = [ 0, 255, 0 ]
 x = 0
 while x < 500:
     c[RED] = x % 250
-    c[BLUE] = x % 250
-    draw_line((XRES / 4) + 2 * x, (YRES / 5) + 3 * x, x, (YRES / 4) + 2 * x, s, c);
-    draw_line(x, (YRES / 4) + 2 * x, XRES, YRES / 2, s, c);
-    c[GREEN] = 0 
-    draw_line(XRES, YRES / 2, (XRES / 4) + 2 * x, (YRES / 5) + 3 * x, s, c);
+    c[GREEN] = x / 10
+    draw_line((XRES) + 2 * x, (YRES / 3) + 4 * x, (XRES / 5) + 6 * x, (YRES / 6) + 5 * x, s, c);
+    draw_line((XRES / 5) + 6 * x, (YRES / 6) + 5 * x, (XRES / 4) + 3 * x, (YRES / 2) + x, s, c);
+    draw_line((XRES / 4) + 3 * x, (YRES / 2) + x, (XRES) + 2 * x, (YRES / 3) + 4 * x, s, c);
     #draw_line(250, 250, x, (YRES * 56) % 500, s, c);
     x = x + 10
 
