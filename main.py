@@ -3,7 +3,7 @@ from draw import *
 import math
 
 s = new_screen()
-c = [ 0, 255, 0 ]
+c = [ 0, 0, 0 ]
 
 # #octants 1 and 5
 # draw_line(0, 0, XRES-1, YRES-1, s, c)
