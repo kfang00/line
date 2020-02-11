@@ -36,7 +36,7 @@ c = [ 0, 255, 0 ]
 for x in range(500):
     c[RED] = x % 250
     c[BLUE] = x % 200
-    draw_line(250, 250, x, x, s, c);
+    draw_line(250, 250, x, (x * 56) % 500, s, c);
 
 
 display(s)
