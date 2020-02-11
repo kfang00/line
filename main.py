@@ -34,7 +34,7 @@ c = [ 250, 0, 250 ]
 # draw_line(0, YRES/2, XRES-1, YRES/2, s, c);
 # draw_line(XRES/2, 0, XRES/2, YRES-1, s, c);
 x = 0
-while x < 200:
+while x < 500:
     draw_line(0, 0, x-1, YRES-1, s, c)
     draw_line(0, 0, x-1, YRES / 2, s, c)
     draw_line(x-1, YRES-1, 0, YRES / 2, s, c)
